@@ -1,0 +1,60 @@
+.card {
+	.card__container {
+		min-width: 720px;
+		max-width: 1440px;
+		margin: auto;
+		display: flex;
+		flex-direction: row;
+		.card__container--img {
+			// flex: 1 1 40%;
+			width: 40%;
+			position: relative;
+
+			.picture {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		.card__container--img::after {
+			display: block;
+			content: "";
+			padding-bottom: 75%;
+		}
+
+		// TEXT CONTAINER
+		.card__container--content {
+			width: 60%;
+			height: inherit;
+			background-color: blue;
+		}
+	}
+}
+
+// .card {
+// 	.card__container {
+// 		min-width: 720px;
+// 		max-width: 1440px;
+// 		// height: 100px;
+// 		margin: auto;
+// 		display: flex;
+// 		flex-direction: row;
+// 		.card__container--img {
+// 			// width: 40%;
+// 			flex: 1 1 40%;
+// 			img {
+// 				width: inherit;
+// 				// height: ;
+// 			}
+// 			&__container--content {
+// 				flex: 1 1 100%;
+// 				width: 60%;
+// 				height: inherit;
+// 				background-color: blue;
+// 			}
+// 		}
+// 	}
+// }
