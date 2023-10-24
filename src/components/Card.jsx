@@ -6,8 +6,8 @@ import { GoDotFill } from "react-icons/go"
 
 function Card(props) {
 	let { image, title, subtitle_bold, tages, price, location } = props
-	// console.log(tages)
-	// let options = tages.map((f) => <p>{f}</p>) 
+// console.log(tages)
+// 	const formattedTages = tages.join(' 🟢 ');
 
 	return (
 		<div className='card'>
@@ -22,11 +22,7 @@ function Card(props) {
 						<div className="card__content-box1--lable-box">
 							<div className="lable-container">
 								<p className='lable__text'> {subtitle_bold}</p>
-
-								{/* {tages ? { options } : <p></p>} */}
-
-								<p className='lable__tag'>{tages} </p>
-								{/* <p className='lable__tag'>Fresh <GoDotFill /> Healthy food</p> */}
+								{tages ? <p>{tages.join(" 🟢 " )}</p> : <p></p>}
 							</div>
 							<div className="card__content-box1--lable__price-box">
 								<p className="lable__price">{price}</p>
