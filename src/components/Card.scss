@@ -1,9 +1,11 @@
 .card {
 	.card__container {
-		background-color: rgb(245, 245, 245);
+		background-color: #f5f5f5;
+		-webkit-box-shadow: 3px 5px 4px -4px rgba(0, 0, 0, 0.2);
+		box-shadow: 3px 5px 4px -4px rgba(0, 0, 0, 0.2);
 		min-width: 720px;
 		max-width: 1440px;
-		margin:2rem auto;
+		margin: 2rem auto;
 		display: flex;
 		flex-direction: row;
 		.card__container--img {
@@ -51,7 +53,7 @@
 					display: flex;
 					justify-content: space-between;
 					padding: 0.5rem 0;
-					margin-top: .5rem;
+					margin-top: 0.5rem;
 					.lable-container {
 						.lable__text {
 							font-size: 24px;
@@ -84,6 +86,7 @@
 				}
 				.card__content-box1--lable__price-box {
 					.lable__price {
+						color: #ff00c7;
 						white-space: nowrap;
 						font-size: 24px;
 						font-weight: 600;
@@ -100,12 +103,17 @@
 				display: flex;
 				align-items: center;
 
-				svg {
-					width: 2rem;
-					height: 2rem;
-					padding: 2px 5px;
-				}
 				p {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					svg {
+						font-size: 1.2rem;
+						// width: 2rem;
+						// height: 2rem;
+						// padding: 2px 5px;
+						margin: 0 5px -2.5px;
+					}
 					margin-inline: 0.5rem;
 					overflow: hidden;
 					text-overflow: ellipsis;
@@ -115,6 +123,9 @@
 				}
 			}
 		}
+	}
+	.card__container:hover{
+		background-color: #D7E6D5;
 	}
 }
 
