@@ -3,7 +3,6 @@ import Card from './components/Card.jsx';
 import data from './components/Data.js';
 
 function App() {
-	console.log(data);
 
 	const cardComponents = data.map((card, index) => (
 		<Card

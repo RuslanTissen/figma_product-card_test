@@ -20,7 +20,7 @@ function Card(props) {
 						<div className="card__content-box1--lable-box">
 							<div className="lable-container">
 								<p className='lable__text'> {subtitle_bold}</p>
-								{tages ? <p>{tages.join(" • ")}</p> : <p></p>}
+								{tages ? <p className='lable__tag'>{tages.join(" • ")}</p> : <p></p>}
 							</div>
 							<div className="card__content-box1--lable__price-box">
 								<p className="lable__price">{price}</p>
