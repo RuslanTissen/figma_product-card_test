@@ -1,7 +1,5 @@
 import React from 'react'
 import "./Card.scss"
-// import image from "../images/figma_image.png"
-import image2 from "../images/figma_image-2.png"
 import { MdLocationPin } from "react-icons/md"
 import { GoDotFill } from "react-icons/go"
 
@@ -15,7 +13,7 @@ function Card(props) {
 		<div className='card'>
 			<div className="card__container">
 				<div className="card__container--img">
-					<img className='picture' src={image} alt="Ups, no photo;)" />
+					<img className='picture' src={image} loading="lazy" alt="Ups, no photo;)" />
 				</div>
 
 				<div className="card__container--content">

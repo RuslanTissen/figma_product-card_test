@@ -1,8 +1,8 @@
-import image_1 from "../images/figma_image-2.png"
+import image_1 from "../images/figma_1.png"
 import image_2 from "../images/figma_image.png"
-import image_3 from "../images/figma_2.png"
+import image_3 from "../images/figma_4.png"
 import image_4 from "../images/figma_3.png"
-import image_5 from "../images/figma_4.png"
+import image_5 from "../images/figma_2.png"
 import { MdOutlineLocationOn } from "react-icons/md"
 import { GoDotFill } from "react-icons/go"
 
