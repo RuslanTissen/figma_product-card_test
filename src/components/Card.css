@@ -1,3 +1,6 @@
+.card {
+  color: rgb(255, 255, 255);
+}
 .card .card__container {
   min-width: 720px;
   max-width: 1440px;
@@ -17,6 +20,7 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
 }
 .card .card__container .card__container--img::after {
   display: block;
@@ -26,5 +30,61 @@
 .card .card__container .card__container--content {
   width: 60%;
   height: inherit;
-  background-color: blue;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .card__container .card__container--content .card__container--content-box1 {
+  margin: 0 2rem;
+}
+.card .card__container .card__container--content .card__container--content-box1 .card__content-box1--title {
+  font-size: 1.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  margin: 0.5rem 0;
+}
+.card .card__container .card__container--content .card__container--content-box1 .card__content-box1--lable-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+.card .card__container .card__container--content .card__container--content-box1 .card__content-box1--lable-box .lable-container .lable__text {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+.card .card__container .card__container--content .card__container--content-box1 .card__content-box1--lable-box .lable-container .lable__tag {
+  display: flex;
+  align-items: center;
+  color: rgb(71, 67, 66);
+  margin: 0;
+  padding: 0.5rem 0;
+  line-height: 1.5rem;
+}
+.card .card__container .card__container--content .card__container--content-box1 .card__content-box1--lable-box .lable-container .lable__tag svg {
+  color: rgb(191, 197, 206);
+  margin: 0 5px;
+}
+.card .card__container .card__container--content .card__container--content-box1 .card__content-box1--lable__price-box .lable__price {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+.card .card__container .card__container--content .card__container--content-box2 {
+  height: 3rem;
+  margin: 0 2rem;
+  display: flex;
+  align-items: center;
+}
+.card .card__container .card__container--content .card__container--content-box2 svg {
+  width: 2rem;
+  height: 2rem;
+  padding: 2px 5px;
+}
+.card .card__container .card__container--content .card__container--content-box2 p {
+  margin-inline: 0.5rem;
 }/*# sourceMappingURL=Card.css.map */

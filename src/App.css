@@ -5,6 +5,7 @@
   min-height: 100vh;
   /* new small viewport height for modern browsers */
   min-height: 100svh;
+  background-color: rgb(245, 245, 245);
 }
 
 /* .App {
