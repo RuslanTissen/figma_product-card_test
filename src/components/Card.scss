@@ -46,7 +46,7 @@
 					display: -webkit-box;
 					-webkit-line-clamp: 4;
 					-webkit-box-orient: vertical;
-					margin: 0.5rem 0;
+					margin: 1rem 0;
 				}
 				.card__content-box1--lable-box {
 					display: flex;
@@ -77,13 +77,15 @@
 							display: flex;
 							display: inline;
 							color: #474342;
+							justify-content: center;
+							align-items: center;
 							.span-dot {
 								width: 0.4rem;
 								height: 0.4rem;
 								border-radius: 50%;
 								display: inline-block;
 								background-color: #bfc5ce;
-								margin: 0 .6rem;
+								margin: .1rem .6rem ;
 							}
 						}
 						.lable__tag:last-child .span-dot{
