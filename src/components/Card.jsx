@@ -7,6 +7,8 @@ import { GoDotFill } from "react-icons/go"
 function Card(props) {
 	let { image, title, subtitle_bold, tages, price, location } = props
 
+	// document.getElementsByClassName("card__tag-notes").innerText = tages.join(' - ' )
+
 	return (
 		<div className='card'>
 			<div className="card__container">
@@ -20,9 +22,14 @@ function Card(props) {
 						<div className="card__content-box1--lable-box">
 							<div className="lable-container">
 								<p className='lable__text'> {subtitle_bold}</p>
-								{tages ? <p className='lable__tag'>{tages.join(" • ")}</p> : <p></p>}
+								{tages ? tages.map((tag) =>
+									<p className='lable__tag'>{tag}
+										<span className='span-dot'></span>
+									</p>)
+									: <p></p>
+								}
 							</div>
-							<div className="card__content-box1--lable__price-box">
+							<div className="card__content-box1--lable--price-box">
 								<p className="lable__price">{price}</p>
 							</div>
 						</div>

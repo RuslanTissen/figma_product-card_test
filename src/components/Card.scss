@@ -74,10 +74,24 @@
 							display: -webkit-box;
 							-webkit-line-clamp: 2;
 							-webkit-box-orient: vertical;
+							display: flex;
+							display: inline;
+							color: #474342;
+							.span-dot {
+								width: 0.4rem;
+								height: 0.4rem;
+								border-radius: 50%;
+								display: inline-block;
+								background-color: #bfc5ce;
+								margin: 0 .6rem;
+							}
+						}
+						.lable__tag:last-child .span-dot{
+							display: none;
 						}
 					}
 				}
-				.card__content-box1--lable__price-box {
+				.card__content-box1--lable--price-box {
 					.lable__price {
 						color: #ff00c7;
 						white-space: nowrap;
