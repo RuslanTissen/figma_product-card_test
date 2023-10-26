@@ -27,7 +27,6 @@ function Card(props) {
 							</div>
 						</div>
 
-
 					</div>
 
 					<div className="card__container--content-box2">
