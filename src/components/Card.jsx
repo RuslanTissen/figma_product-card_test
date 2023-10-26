@@ -1,11 +1,10 @@
 import React from 'react'
 import "./Card.scss"
 import { MdLocationPin } from "react-icons/md"
-import { GoDotFill } from "react-icons/go"
 
 
 function Card(props) {
-	let { image, title, subtitle_bold, tages, price, location } = props
+	let { product, title, subtitle_bold, tages, price, location } = props
 
 	// document.getElementsByClassName("card__tag-notes").innerText = tages.join(' - ' )
 
@@ -13,7 +12,7 @@ function Card(props) {
 		<div className='card'>
 			<div className="card__container">
 				<div className="card__container--img">
-					<img className='picture' src={image} loading="lazy" alt="Ups, no photo;)" />
+					<img className='product-image' src={product} loading="lazy" alt="Ups, no product;)" />
 				</div>
 
 				<div className="card__container--content">
@@ -39,6 +38,8 @@ function Card(props) {
 					<div className="card__container--content-box2">
 						{location ? <p><MdLocationPin /> {location}</p> : <p></p>}
 					</div>
+
+					
 				</div>
 			</div>
 

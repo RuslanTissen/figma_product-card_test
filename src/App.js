@@ -7,7 +7,7 @@ function App() {
 	const cardComponents = data.map((card, index) => (
 		<Card
 			key={index}
-			image={card.image}
+			product={card.product}
 			title={card.title}
 			subtitle_bold={card.subtitle_bold}
 			tages={card.tages}
