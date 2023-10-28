@@ -25,6 +25,7 @@ function Card(props) {
 									<p className='lable__tag'>{tag}
 										<span className='span-dot'></span>
 									</p>)
+									
 									: <p></p>
 								}
 							</div>
